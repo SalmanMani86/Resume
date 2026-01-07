@@ -140,7 +140,7 @@ function App() {
           <a href="#skills">Skills</a>
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
-          <a href="#contact" className="nav-cta">Hire Me</a>
+          <a href="#contact" className="nav-cta">Let's Talk</a>
         </motion.div>
       </nav>
 
@@ -193,7 +193,7 @@ function App() {
             transition={{ duration: 0.8, delay: 0.8 }}
           >
             <a href="#contact" className="btn btn-primary">
-              Hire Me
+              Let's Talk
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M5 12h14M12 5l7 7-7 7"/>
               </svg>
