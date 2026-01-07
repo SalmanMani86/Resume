@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://salmanmani86.github.io/portfolio",
+  "homepage": "https://salmanmani86.github.io/Resume",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
