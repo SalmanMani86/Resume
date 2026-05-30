@@ -20,45 +20,52 @@ const FadeInSection = ({ children, delay = 0 }) => {
 
 // Skills with proficiency levels (recruiters love this!)
 const skillsData = [
+  { name: 'Next.js', level: 88, category: 'frontend' },
   { name: 'React', level: 90, category: 'frontend' },
   { name: 'Vue.js', level: 85, category: 'frontend' },
+  { name: 'TypeScript', level: 85, category: 'frontend' },
   { name: 'JavaScript', level: 90, category: 'frontend' },
-  { name: 'TypeScript', level: 80, category: 'frontend' },
+  { name: 'Tailwind CSS', level: 88, category: 'frontend' },
   { name: 'HTML/CSS', level: 95, category: 'frontend' },
-  { name: 'Node.js', level: 85, category: 'backend' },
-  { name: 'Express.js', level: 85, category: 'backend' },
+  { name: 'Node.js', level: 90, category: 'backend' },
+  { name: 'Express.js', level: 88, category: 'backend' },
   { name: 'REST APIs', level: 90, category: 'backend' },
-  { name: 'MongoDB', level: 85, category: 'database' },
-  { name: 'PostgreSQL', level: 80, category: 'database' },
-  { name: 'MySQL', level: 80, category: 'database' },
-  { name: 'Git', level: 85, category: 'tools' },
-  { name: 'Agile/Scrum', level: 85, category: 'tools' },
-  { name: 'Figma', level: 75, category: 'tools' },
+  { name: 'JWT Authentication', level: 85, category: 'backend' },
+  { name: 'Microservices', level: 82, category: 'backend' },
+  { name: 'WebSockets', level: 80, category: 'backend' },
+  { name: 'MongoDB', level: 88, category: 'database' },
+  { name: 'PostgreSQL', level: 85, category: 'database' },
+  { name: 'MySQL', level: 82, category: 'database' },
+  { name: 'Docker', level: 80, category: 'devops' },
+  { name: 'AWS', level: 75, category: 'devops' },
+  { name: 'CI/CD', level: 78, category: 'devops' },
+  { name: 'Git', level: 90, category: 'devops' },
+  { name: 'Agile/Scrum', level: 88, category: 'tools' },
+  { name: 'Figma', level: 78, category: 'tools' },
 ]
 
 const experiences = [
   {
     company: 'Programmers Force',
     role: 'Software Engineer',
-    period: 'Jan 2024 - Present',
+    period: 'Aug 2024 - Present',
     location: 'Lahore, Pakistan',
     highlights: [
-      'Developed and deployed 10+ full-stack features using Node.js, React, Vue.js, and MongoDB/MySQL, delivering production-ready modules from concept to release.',
-      'Transformed 25+ Figma designs into responsive, pixel-perfect interfaces achieving 98% design accuracy.',
-      'Built and maintained RESTful APIs serving 1000+ daily active users with 99.5% uptime.',
-      'Optimized application performance, reducing page load times by 40% and improving Core Web Vitals scores.'
+      'Delivered production-ready features across 6+ client projects on schedule — owning full-stack development from API design to frontend implementation in an Agile environment.',
+      'Built RESTful APIs with JWT authentication and role-based access control, supporting 1,000+ concurrent users across multiple applications.',
+      'Converted Figma designs to pixel-perfect responsive UIs using reusable component libraries — reduced design-to-code time by 30%.',
+      'Optimized database queries and frontend bundles, improving average page load time by 40% across production apps.'
     ]
   },
   {
     company: 'Finz Games',
     role: 'Software Engineer',
-    period: 'June 2022 - Dec 2023',
+    period: 'Jun 2022 - Jul 2024',
     location: 'Lahore, Pakistan',
     highlights: [
-      'Developed 3 mobile games using Unity and C#, achieving 50,000+ combined downloads on app stores.',
-      'Improved game performance by 35% through memory optimization and asset management.',
-      'Collaborated with a team of 5 developers in an Agile environment with 2-week sprint cycles.',
-      'Reduced bug count by 60% through comprehensive testing and code refactoring.'
+      'Contributed to the full product lifecycle across multiple web applications — handling backend API development, database design, and frontend integration from concept to production.',
+      'Reduced runtime memory overhead by 25% through performance profiling and targeted optimizations on Node.js backend services.',
+      'Implemented structured error handling and debugging workflows — cut average production issue resolution time by 60%.'
     ]
   }
 ]
@@ -67,11 +74,11 @@ const projects = [
   {
     name: 'Connect Wheels',
     status: 'In Progress',
-    description: 'A scalable car listing platform with microservices architecture, real-time chat, and JWT authentication. Features API Gateway for service communication and responsive React frontend.',
+    description: 'A social car platform where users create garage profiles, post car listings and feeds, and connect via real-time chat. Built with microservices architecture, an API Gateway, JWT authentication, and WebSocket-powered messaging — full-stack from RESTful APIs to a responsive frontend with secure multi-user session handling.',
     tech: ['Node.js', 'TypeScript', 'Express', 'MongoDB', 'PostgreSQL', 'React'],
     icon: 'car',
     github: 'https://github.com/SalmanMani86',
-    features: ['Microservices', 'Real-time Chat', 'JWT Auth', 'API Gateway']
+    features: ['Microservices', 'Real-time Chat', 'JWT Auth', 'API Gateway', 'WebSockets']
   },
   {
     name: 'E-commerce Platform',
@@ -84,7 +91,7 @@ const projects = [
   {
     name: 'MihRM',
     subtitle: 'Employee Management System',
-    description: 'Complete HR management solution with role-based dashboards, attendance tracking, leave management, and employee performance analytics.',
+    description: 'Role-based HR platform with separate dashboards for admins, managers, and employees. Features include attendance tracking, leave management, and reporting — designed for small to mid-size teams.',
     tech: ['Node.js', 'Express', 'MySQL', 'Vue.js'],
     icon: 'users',
     github: 'https://github.com/SalmanMani86',
@@ -102,10 +109,10 @@ const projects = [
 
 // Stats that recruiters love to see
 const stats = [
-  { number: '2+', label: 'Years Experience' },
-  { number: '10+', label: 'Projects Completed' },
-  { number: '50K+', label: 'Users Impacted' },
-  { number: '99.5%', label: 'Uptime Achieved' }
+  { number: '4+', label: 'Years Experience' },
+  { number: '6+', label: 'Client Projects' },
+  { number: '1K+', label: 'Concurrent Users' },
+  { number: '40%', label: 'Faster Load Times' }
 ]
 
 function App() {
@@ -182,8 +189,8 @@ function App() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            I build <span className="highlight">scalable web applications</span> and <span className="highlight">robust backend systems</span>. 
-            Specialized in React, Node.js, and Vue.js with a passion for clean code and exceptional user experiences.
+            Full Stack Developer with <span className="highlight">4+ years</span> building production-grade web apps across fintech and enterprise domains. 
+            Specialized in Next.js, React, Node.js, and TypeScript with a focus on performance, clean architecture, and shipping high-impact features.
           </motion.p>
           
           <motion.div 
@@ -269,12 +276,13 @@ function App() {
           <FadeInSection delay={0.2}>
             <div className="about-text">
               <p>
-                I'm a <span className="highlight">Full-Stack Software Engineer</span> passionate about building things that live on the internet. 
-                My journey in tech has been driven by a love for creating seamless web experiences and scalable backend systems.
+                I'm a <span className="highlight">Full-Stack Software Engineer</span> with <span className="highlight">4+ years</span> of experience building 
+                production-grade web applications using Next.js, React, Node.js, TypeScript, and MongoDB/PostgreSQL.
               </p>
               <p>
-                Currently at <span className="highlight">Programmers Force</span>, I develop full-stack applications, 
-                transforming designs into pixel-perfect, responsive interfaces while building robust backend systems that serve thousands of users.
+                I've delivered scalable systems across <span className="highlight">fintech and enterprise domains</span> — including microservices platforms, 
+                real-time applications, and role-based systems. Currently at <span className="highlight">Programmers Force</span>, I own full-stack 
+                development from API design to pixel-perfect frontend implementation.
               </p>
               <p>
                 I hold a <span className="highlight">BS in Computer Science</span> from the University of Management and Technology, 
@@ -364,7 +372,7 @@ function App() {
         
         <FadeInSection delay={0.2}>
           <div className="skills-filter">
-            {['all', 'frontend', 'backend', 'database', 'tools'].map(category => (
+            {['all', 'frontend', 'backend', 'database', 'devops', 'tools'].map(category => (
               <button 
                 key={category}
                 className={`filter-btn ${activeSkillCategory === category ? 'active' : ''}`}
@@ -402,6 +410,9 @@ function App() {
           <div className="tech-stack-visual">
             <h3 className="stack-title">Tech Stack I Work With</h3>
             <div className="tech-icons">
+              <div className="tech-icon-item" data-tooltip="Next.js">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.99 3.657 9.126 8.437 9.879v-6.988H7.898V12h2.539V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.129 22 16.992 22 12c0-5.523-4.477-10-10-10z" opacity="0"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c1.84 0 3.56-.5 5.03-1.36l-5.4-7.02V17H9.5V7h2.1l5.9 7.6V7H19.5v10.6C21.04 15.79 22 13.99 22 12c0-5.52-4.48-10-10-10z"/></svg>
+              </div>
               <div className="tech-icon-item" data-tooltip="React">
                 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 10.11c1.03 0 1.87.84 1.87 1.89 0 1-.84 1.85-1.87 1.85S10.13 13 10.13 12c0-1.05.84-1.89 1.87-1.89M7.37 20c.63.38 2.01-.2 3.6-1.7-.52-.59-1.03-1.23-1.51-1.9a22.7 22.7 0 01-2.4-.36c-.51 2.14-.32 3.61.31 3.96m.71-5.74l-.29-.51c-.11.29-.22.58-.29.86.27.06.57.11.88.16l-.3-.51m6.54-.76l.81-1.5-.81-1.5c-.3-.53-.62-1-.91-1.47C13.17 9 12.6 9 12 9s-1.17 0-1.71.03c-.29.47-.61.94-.91 1.47L8.57 12l.81 1.5c.3.53.62 1 .91 1.47.54.03 1.11.03 1.71.03s1.17 0 1.71-.03c.29-.47.61-.94.91-1.47M12 6.78c-.19.22-.39.45-.59.72h1.18c-.2-.27-.4-.5-.59-.72m0 10.44c.19-.22.39-.45.59-.72h-1.18c.2.27.4.5.59.72M16.62 4c-.62-.38-2 .2-3.59 1.7.52.59 1.03 1.23 1.51 1.9.82.08 1.63.2 2.4.36.51-2.14.32-3.61-.32-3.96m-.7 5.74l.29.51c.11-.29.22-.58.29-.86-.27-.06-.57-.11-.88-.16l.3.51m1.45-7.05c1.47.84 1.63 3.05 1.01 5.63 2.54.75 4.37 1.99 4.37 3.68s-1.83 2.93-4.37 3.68c.62 2.58.46 4.79-1.01 5.63-1.46.84-3.45-.12-5.37-1.95-1.92 1.83-3.91 2.79-5.38 1.95-1.46-.84-1.62-3.05-1-5.63-2.54-.75-4.37-1.99-4.37-3.68s1.83-2.93 4.37-3.68c-.62-2.58-.46-4.79 1-5.63 1.47-.84 3.46.12 5.38 1.95 1.92-1.83 3.91-2.79 5.37-1.95M17.08 12c.34.75.64 1.5.89 2.26 2.1-.63 3.28-1.53 3.28-2.26s-1.18-1.63-3.28-2.26c-.25.76-.55 1.51-.89 2.26M6.92 12c-.34-.75-.64-1.5-.89-2.26-2.1.63-3.28 1.53-3.28 2.26s1.18 1.63 3.28 2.26c.25-.76.55-1.51.89-2.26m9 2.26l-.3.51c.31-.05.61-.1.88-.16-.07-.28-.18-.57-.29-.86l-.29.51m-2.89 4.04c1.59 1.5 2.97 2.08 3.59 1.7.64-.35.83-1.82.32-3.96-.77.16-1.58.28-2.4.36-.48.67-.99 1.31-1.51 1.9M8.08 9.74l.3-.51c-.31.05-.61.1-.88.16.07.28.18.57.29.86l.29-.51m2.89-4.04C9.38 4.2 8 3.62 7.37 4c-.63.35-.82 1.82-.31 3.96a22.7 22.7 0 012.4-.36c.48-.67.99-1.31 1.51-1.9z"/></svg>
               </div>
@@ -425,6 +436,15 @@ function App() {
               </div>
               <div className="tech-icon-item" data-tooltip="JavaScript">
                 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h18v18H3V3m4.73 15.04c.4.85 1.19 1.55 2.54 1.55 1.5 0 2.53-.8 2.53-2.55v-5.78h-1.7V17c0 .86-.35 1.08-.9 1.08-.58 0-.82-.4-1.09-.87l-1.38.83m5.98-.18c.5.98 1.51 1.73 3.09 1.73 1.6 0 2.8-.83 2.8-2.36 0-1.41-.81-2.04-2.25-2.66l-.42-.18c-.73-.31-1.04-.52-1.04-1.02 0-.41.31-.73.81-.73.48 0 .8.21 1.09.73l1.31-.87c-.55-.96-1.33-1.33-2.4-1.33-1.51 0-2.48.96-2.48 2.23 0 1.38.81 2.03 2.03 2.55l.42.18c.78.34 1.24.55 1.24 1.13 0 .48-.45.83-1.15.83-.83 0-1.31-.43-1.67-1.03l-1.38.8z"/></svg>
+              </div>
+              <div className="tech-icon-item" data-tooltip="Tailwind CSS">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 6c-2.67 0-4.33 1.33-5 4 1-1.33 2.17-1.83 3.5-1.5.76.19 1.31.74 1.91 1.35.98 1 2.11 2.15 4.59 2.15 2.67 0 4.33-1.33 5-4-1 1.33-2.17 1.83-3.5 1.5-.76-.19-1.3-.74-1.91-1.35C15.61 7.15 14.48 6 12 6M7 12c-2.67 0-4.33 1.33-5 4 1-1.33 2.17-1.83 3.5-1.5.76.19 1.3.74 1.91 1.35.98 1 2.11 2.15 4.59 2.15 2.67 0 4.33-1.33 5-4-1 1.33-2.17 1.83-3.5 1.5-.76-.19-1.3-.74-1.91-1.35C10.61 13.15 9.48 12 7 12z"/></svg>
+              </div>
+              <div className="tech-icon-item" data-tooltip="Docker">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.98 11.08h2.12a.19.19 0 00.18-.19V9.01a.19.19 0 00-.18-.19h-2.12a.19.19 0 00-.19.19v1.88c0 .11.08.19.19.19m-2.95 0h2.12a.19.19 0 00.18-.19V9.01a.19.19 0 00-.18-.19h-2.12a.19.19 0 00-.19.19v1.88c0 .11.09.19.19.19m-2.91 0h2.12a.19.19 0 00.19-.19V9.01a.19.19 0 00-.19-.19H8.12a.19.19 0 00-.18.19v1.88c0 .11.08.19.18.19m-2.92 0h2.13a.19.19 0 00.18-.19V9.01a.19.19 0 00-.18-.19H5.2a.19.19 0 00-.19.19v1.88c0 .11.08.19.19.19m2.92-2.72h2.12a.19.19 0 00.19-.19V6.29a.19.19 0 00-.19-.18H8.12a.19.19 0 00-.18.18v1.88c0 .11.08.19.18.19m2.95 0h2.12a.19.19 0 00.18-.19V6.29a.19.19 0 00-.18-.18h-2.12a.19.19 0 00-.19.18v1.88c0 .11.09.19.19.19m2.95 0h2.12a.19.19 0 00.18-.19V6.29a.19.19 0 00-.18-.18h-2.12a.19.19 0 00-.19.18v1.88c0 .11.08.19.19.19m8.32 1.6c-.06-.05-.67-.51-1.95-.51-.34 0-.68.03-1.01.09-.25-1.69-1.65-2.51-1.71-2.55l-.34-.2-.22.32c-.28.43-.49.91-.6 1.41-.23.97-.09 1.88.4 2.66-.59.33-1.54.41-1.74.42H1.76a.74.74 0 00-.74.74c-.03 1.26.18 2.51.64 3.68.51 1.3 1.28 2.25 2.27 2.83 1.11.65 2.92 1.02 4.97 1.02.92 0 1.85-.08 2.76-.25a11.5 11.5 0 003.61-1.32c.93-.54 1.77-1.22 2.48-2.03 1.19-1.35 1.9-2.85 2.42-4.19h.21c1.37 0 2.21-.55 2.68-1 .31-.3.55-.66.71-1.07l.1-.29-.26-.18z"/></svg>
+              </div>
+              <div className="tech-icon-item" data-tooltip="AWS">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.76 10.27c0 .3.03.54.09.72.06.18.15.37.26.58.04.06.06.12.06.18 0 .08-.05.16-.15.24l-.5.33a.38.38 0 01-.21.07c-.08 0-.16-.04-.24-.11a2.5 2.5 0 01-.29-.38 6.2 6.2 0 01-.25-.48c-.62.73-1.4 1.1-2.33 1.1-.67 0-1.2-.19-1.59-.57-.39-.38-.59-.89-.59-1.53 0-.68.24-1.23.72-1.65.48-.42 1.12-.63 1.94-.63.27 0 .55.02.84.07.29.04.59.11.9.18v-.57c0-.61-.13-1.04-.38-1.28-.26-.25-.7-.37-1.32-.37-.28 0-.57.03-.87.1-.3.07-.59.16-.87.27a2.3 2.3 0 01-.28.11.5.5 0 01-.13.02c-.11 0-.17-.08-.17-.25v-.39c0-.13.02-.23.06-.29.04-.06.11-.12.22-.18.28-.14.62-.27 1.01-.37.39-.1.81-.15 1.25-.15.95 0 1.65.22 2.09.65.44.43.66 1.09.66 1.97v2.59zm-3.22 1.21c.26 0 .53-.05.81-.14.28-.1.53-.27.74-.5.13-.15.22-.31.27-.5.05-.18.07-.4.07-.66v-.32a6.6 6.6 0 00-.72-.13 5.9 5.9 0 00-.74-.05c-.53 0-.92.1-1.18.32-.26.21-.39.51-.39.91 0 .37.1.65.29.84.18.19.45.28.81.28zm6.37.86c-.15 0-.25-.03-.31-.08-.07-.05-.13-.16-.18-.32L7.32 5.65a1.4 1.4 0 01-.08-.33c0-.13.07-.2.2-.2h.78c.15 0 .26.02.31.08.07.05.12.16.17.32l1.36 5.36 1.27-5.36c.04-.16.09-.27.16-.32a.57.57 0 01.32-.08h.64c.16 0 .26.02.33.08.06.05.12.16.16.32l1.28 5.42 1.4-5.42c.05-.16.11-.27.17-.32a.53.53 0 01.31-.08h.74c.13 0 .21.07.21.2 0 .04 0 .08-.02.13a1.16 1.16 0 01-.06.21l-1.96 6.29c-.05.16-.11.27-.18.32a.55.55 0 01-.31.08h-.69c-.16 0-.26-.03-.33-.09-.06-.05-.12-.16-.16-.33l-1.26-5.22-1.25 5.21c-.04.17-.09.28-.16.33-.06.06-.17.09-.33.09h-.69zm10.2.22c-.42 0-.84-.05-1.24-.15-.4-.1-.71-.21-.92-.33-.13-.07-.22-.16-.25-.23a.6.6 0 01-.05-.23v-.41c0-.17.06-.25.18-.25.05 0 .1.01.15.03.05.02.12.05.21.09.29.13.6.23.94.3.34.07.68.1 1.02.1.54 0 .96-.09 1.25-.28.29-.19.44-.46.44-.81 0-.24-.08-.44-.23-.6-.15-.16-.44-.31-.85-.45l-1.22-.38c-.61-.19-1.07-.48-1.35-.86-.28-.38-.42-.8-.42-1.25 0-.36.08-.68.23-.95.16-.27.37-.51.64-.69.27-.19.57-.33.93-.42.35-.1.72-.14 1.11-.14.18 0 .37.01.55.04.19.02.36.06.53.09.16.04.31.08.46.13.14.05.26.1.34.15.11.07.19.14.24.21.05.07.07.16.07.28v.38c0 .17-.06.26-.18.26a.81.81 0 01-.3-.09 3.6 3.6 0 00-1.51-.31c-.49 0-.88.08-1.14.24-.27.16-.4.41-.4.75 0 .24.09.44.26.6.17.16.49.32.94.47l1.19.38c.6.19 1.04.46 1.3.8.26.34.39.74.39 1.18 0 .37-.08.7-.23 1-.15.3-.36.55-.63.76-.27.21-.59.36-.96.47-.39.11-.79.17-1.23.17z"/></svg>
               </div>
             </div>
           </div>
