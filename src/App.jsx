@@ -51,7 +51,7 @@ const experiences = [
   {
     company: 'Programmers Force',
     role: 'Software Engineer',
-    period: 'Aug 2024 - Present',
+    period: 'Mar 2024 - May 2026',
     location: 'Lahore, Pakistan',
     highlights: [
       'Delivered production-ready features across 6+ client projects on schedule — owning full-stack development from API design to frontend implementation in an Agile/Scrum environment.',
@@ -65,7 +65,7 @@ const experiences = [
   {
     company: 'Finz Games',
     role: 'Software Engineer',
-    period: 'May 2021 - Jul 2024',
+    period: 'Aug 2022 - Feb 2024',
     location: 'Lahore, Pakistan',
     highlights: [
       'Built and maintained RESTful APIs across 3+ web applications — handling backend architecture, database design, and third-party integrations from concept to production.',
@@ -113,7 +113,7 @@ const projects = [
 
 // Stats that recruiters love to see
 const stats = [
-  { number: '5+', label: 'Years Experience' },
+  { number: '3+', label: 'Years Experience' },
   { number: '6+', label: 'Client Projects' },
   { number: '1K+', label: 'Concurrent Users' },
   { number: '40%', label: 'Faster Load Times' }
@@ -193,7 +193,7 @@ function App() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            Full Stack Developer with <span className="highlight">5+ years</span> shipping production-grade SaaS and fintech applications using Next.js, React, Node.js, and TypeScript.
+            Full Stack Developer with <span className="highlight">3+ years</span> shipping production-grade SaaS and fintech applications using Next.js, React, Node.js, and TypeScript.
             Experienced across distributed teams with a focus on clean architecture, measurable performance wins, and high-impact shipping.
           </motion.p>
           
@@ -280,12 +280,12 @@ function App() {
           <FadeInSection delay={0.2}>
             <div className="about-text">
               <p>
-                I'm a <span className="highlight">Full Stack Developer</span> with <span className="highlight">5+ years</span> of experience shipping
+                I'm a <span className="highlight">Full Stack Developer</span> with <span className="highlight">3+ years</span> of experience shipping
                 production-grade SaaS and fintech applications using Next.js, React, Node.js, TypeScript, and MongoDB/PostgreSQL.
               </p>
               <p>
                 I've delivered scalable systems across <span className="highlight">fintech and enterprise domains</span> — including microservices platforms, 
-                real-time applications, and role-based systems. Currently at <span className="highlight">Programmers Force</span>, I own full-stack 
+                real-time applications, and role-based systems. Most recently at <span className="highlight">Programmers Force</span>, I owned full-stack
                 development from API design to pixel-perfect frontend implementation.
               </p>
               <p>
