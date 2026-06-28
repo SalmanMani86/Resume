@@ -4,7 +4,7 @@ A modern, responsive portfolio website built with React and Vite.
 
 ## 🚀 Live Demo
 
-**[View Portfolio](https://salmanmani86.github.io/Resume)**
+**[View Portfolio](https://salmanmani86.github.io/portfolio)**
 
 ## ✨ Features
 
