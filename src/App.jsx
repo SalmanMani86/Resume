@@ -51,7 +51,7 @@ const experiences = [
   {
     company: 'Programmers Force',
     role: 'Software Engineer',
-    period: 'Aug 2024 - May 2026',
+    period: 'Mar 2024 - May 2026',
     location: 'Lahore, Pakistan',
     highlights: [
       'Delivered production-ready features across 6+ client projects on schedule — owning full-stack development from API design to frontend implementation in an Agile/Scrum environment.',
@@ -65,7 +65,7 @@ const experiences = [
   {
     company: 'Finz Games',
     role: 'Software Engineer',
-    period: 'May 2021 - July 2024',
+    period: 'May 2021 - Feb 2024',
     location: 'Lahore, Pakistan',
     highlights: [
       'Built and maintained RESTful APIs across 3+ web applications — handling backend architecture, database design, and third-party integrations from concept to production.',
