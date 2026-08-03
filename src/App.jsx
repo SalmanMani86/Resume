@@ -32,10 +32,22 @@ const skillsData = [
   { name: 'REST APIs', level: 90, category: 'backend' },
   { name: 'JWT Authentication', level: 85, category: 'backend' },
   { name: 'Microservices', level: 82, category: 'backend' },
+  { name: 'gRPC', level: 78, category: 'backend' },
   { name: 'WebSockets', level: 80, category: 'backend' },
+  { name: 'Stripe', level: 78, category: 'backend' },
+  { name: 'OpenAPI/Swagger', level: 80, category: 'backend' },
+  { name: 'Python', level: 80, category: 'ai' },
+  { name: 'FastAPI', level: 78, category: 'ai' },
+  { name: 'RAG Pipelines', level: 82, category: 'ai' },
+  { name: 'LangChain', level: 80, category: 'ai' },
+  { name: 'pgvector', level: 78, category: 'ai' },
+  { name: 'Prompt Engineering', level: 82, category: 'ai' },
+  { name: 'OpenAI / Claude / Gemini APIs', level: 80, category: 'ai' },
   { name: 'MongoDB', level: 88, category: 'database' },
   { name: 'PostgreSQL', level: 85, category: 'database' },
   { name: 'MySQL', level: 82, category: 'database' },
+  { name: 'Redis', level: 78, category: 'database' },
+  { name: 'Prisma', level: 78, category: 'database' },
   { name: 'Docker', level: 80, category: 'devops' },
   { name: 'AWS', level: 75, category: 'devops' },
   { name: 'GitHub Actions', level: 80, category: 'devops' },
@@ -45,6 +57,7 @@ const skillsData = [
   { name: 'Git', level: 90, category: 'devops' },
   { name: 'Agile/Scrum', level: 88, category: 'tools' },
   { name: 'Figma', level: 78, category: 'tools' },
+  { name: 'Jest', level: 82, category: 'tools' },
 ]
 
 const experiences = [
@@ -54,12 +67,10 @@ const experiences = [
     period: 'Mar 2024 - May 2026',
     location: 'Lahore, Pakistan',
     highlights: [
-      'Delivered production-ready features across 6+ client projects on schedule — owning full-stack development from API design to frontend implementation in an Agile/Scrum environment.',
-      'Built RESTful APIs with JWT authentication and role-based access control, supporting 1,000+ concurrent users across multiple applications.',
-      'Converted Figma designs to pixel-perfect React UIs — reduced design-to-code time by 30%.',
-      'Optimized database queries and frontend bundles, improving average page load time by 40% across production apps.',
-      'Contributed to shuftipro.com — enterprise identity verification SaaS.',
-      'Maintained CI/CD pipelines using GitHub Actions — automated testing and deployment across client projects.'
+      'Built the authentication and role-based access control layer for shuftipro.com, an enterprise identity verification SaaS supporting 1,000 concurrent users, using Node.js, Express and JWT.',
+      'Built a fintech lending platform end to end, integrating Stripe Connect for lender onboarding, payment flows and automated payouts.',
+      'Cut average page load time by 40% across production apps via backend query tuning and frontend bundle optimization.',
+      'Delivered production features across six client projects, owning API design through frontend release on each.'
     ]
   },
   {
@@ -68,18 +79,27 @@ const experiences = [
     period: 'May 2021 - Feb 2024',
     location: 'Lahore, Pakistan',
     highlights: [
-      'Built and maintained RESTful APIs across 3+ web applications — handling backend architecture, database design, and third-party integrations from concept to production.',
-      'Reduced runtime memory overhead by 25% through performance profiling and targeted optimizations on Node.js backend services.',
-      'Implemented structured error handling and debugging workflows — cut average production issue resolution time by 60%.'
+      'Built the entity screening dashboards for AML Watcher and Media Watcher across frontend and backend, integrating third-party data provider APIs so one search returns aggregated sanctions, PEP and adverse media matches from multiple databases across 100,000 global sources.',
+      'Built and maintained REST APIs across three web applications, owning backend architecture, database design and third-party integrations from concept to production.',
+      'Reduced runtime memory overhead by 25% through performance profiling and targeted optimization of Node.js backend services.',
+      'Cut average production issue resolution time by 60% by standardizing error handling and debugging workflows.'
     ]
   }
 ]
 
 const projects = [
   {
+    name: 'AI Job Copilot',
+    description: 'RAG-based job matching tool that embeds resumes and job descriptions into a vector store and returns match scoring with tailored application drafts. Built the retrieval pipeline end to end covering chunking, embedding, relevance ranking, and grounded generation.',
+    tech: ['Next.js', 'TypeScript', 'Python', 'FastAPI', 'LangChain', 'Supabase pgvector', 'Groq'],
+    icon: 'ai',
+    github: 'https://github.com/SalmanMani86',
+    features: ['RAG Pipeline', 'Embeddings', 'Vector Search', 'LLM Grounding']
+  },
+  {
     name: 'Connect Wheels',
     description: 'A social car platform where users create garage profiles, post car listings and feeds, and connect via real-time chat. Built with microservices architecture, an API Gateway, JWT authentication, and WebSocket-powered messaging — full-stack from RESTful APIs to a responsive frontend with secure multi-user session handling.',
-    tech: ['Node.js', 'TypeScript', 'Express', 'MongoDB', 'PostgreSQL', 'React'],
+    tech: ['Node.js', 'TypeScript', 'Express', 'gRPC', 'MongoDB', 'PostgreSQL', 'React'],
     icon: 'car',
     github: 'https://github.com/SalmanMani86',
     features: ['Microservices', 'Real-time Chat', 'JWT Auth', 'API Gateway', 'WebSockets']
@@ -193,8 +213,7 @@ function App() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            Full Stack Developer with <span className="highlight">5+ years</span> shipping production-grade SaaS and fintech applications using Next.js, React, Node.js, and TypeScript.
-            Experienced working across distributed teams and delivering features async — focused on clean architecture, measurable performance wins, and high-impact shipping.
+            Full Stack Developer with <span className="highlight">5+ years</span> in Next.js, React, Node.js and TypeScript, building production SaaS and fintech platforms — from identity verification at 1,000 concurrent users to a Stripe Connect lending marketplace. Recent work in <span className="highlight">RAG and LLM systems</span> with Python.
           </motion.p>
           
           <motion.div 
@@ -280,13 +299,13 @@ function App() {
           <FadeInSection delay={0.2}>
             <div className="about-text">
               <p>
-                I'm a <span className="highlight">Full Stack Developer</span> with <span className="highlight">5+ years</span> of experience shipping
-                production-grade SaaS and fintech applications using Next.js, React, Node.js, TypeScript, and MongoDB/PostgreSQL.
+                I'm a <span className="highlight">Full Stack Developer</span> with <span className="highlight">5+ years</span> of experience building
+                production SaaS and fintech platforms using Next.js, React, Node.js, TypeScript, and MongoDB/PostgreSQL.
               </p>
               <p>
-                I've delivered scalable systems across <span className="highlight">fintech and enterprise domains</span> — including microservices platforms, 
-                real-time applications, and role-based systems. Most recently at <span className="highlight">Programmers Force</span>, I owned full-stack
-                development from API design to pixel-perfect frontend implementation.
+                I've delivered scalable systems across <span className="highlight">fintech and enterprise domains</span> — from identity verification at
+                1,000 concurrent users to a <span className="highlight">Stripe Connect</span> lending marketplace. Most recently at <span className="highlight">Programmers Force</span>, I owned full-stack
+                development from API design to frontend release, and I've been doing recent work in <span className="highlight">RAG and LLM systems</span> with Python.
               </p>
               <p>
                 I hold a <span className="highlight">BS in Computer Science</span> from the University of Management and Technology, 
@@ -376,7 +395,7 @@ function App() {
         
         <FadeInSection delay={0.2}>
           <div className="skills-filter">
-            {['all', 'frontend', 'backend', 'database', 'devops', 'tools'].map(category => (
+            {['all', 'frontend', 'backend', 'ai', 'database', 'devops', 'tools'].map(category => (
               <button 
                 key={category}
                 className={`filter-btn ${activeSkillCategory === category ? 'active' : ''}`}
@@ -502,6 +521,12 @@ function App() {
             <FadeInSection key={project.name} delay={0.15 * (index + 1)}>
               <div className="project-card">
                 <div className="project-header">
+                  {project.icon === 'ai' && (
+                    <svg className="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                      <path d="M12 2a4 4 0 00-4 4v1a3 3 0 00-2 2.83V16a4 4 0 004 4h4a4 4 0 004-4V9.83A3 3 0 0016 7V6a4 4 0 00-4-4z"/>
+                      <path d="M9 11h.01M15 11h.01M9 15c.5.7 1.5 1 3 1s2.5-.3 3-1"/>
+                    </svg>
+                  )}
                   {project.icon === 'car' && (
                     <svg className="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                       <path d="M5 17h14M6 12h12M7 7h10M4 17a2 2 0 012-2h12a2 2 0 012 2v1a1 1 0 01-1 1H5a1 1 0 01-1-1v-1z"/>
